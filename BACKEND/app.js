@@ -40,7 +40,7 @@ app.use("/api/create", shortUrl);
 app.get("/:id", redirectFromShortUrl);
 app.use(errHandler);
 mongoose
-  .connect('mongodb://localhost:27017/url-shortener')
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("mongoDb is Connected!"));
 
 
