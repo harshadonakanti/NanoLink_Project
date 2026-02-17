@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { getAllUserUrls } from "../api/user.api.js";
 import { deleteShortUrl } from "../api/shortUrl.api.js";
 
-const BACKEND_URL = "http://localhost:3000";
+const BACKEND_URL = "https://nanolink-ofgx.onrender.com/";
 
 const UserUrls = ({ showDelete = false }) => {
   const [copiedId, setCopiedId] = useState(null);
